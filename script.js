@@ -35,23 +35,24 @@ function newTodo() {
             
         list.appendChild(elemLi);
         
-        
         itemChange(input);
-        listenDeleteTodo(btndel);
+        listenDeleteTodo(btndel,input);
     }
 }
 
 
-function listenDeleteTodo(element) {
+function listenDeleteTodo(element, inp) {
     element.addEventListener("click", (event) => {
         element.parentElement.remove();
         event.stopPropagation();
+        if(!inp.checked)
+            {
+               count2 -=1; 
+            }
         count -= 1;
-        count2-=1;
         itemCountSpan.innerText = itemCountSpan.textContent = count;
         uncheckedCountSpan.innerText = uncheckedCountSpan.textContent = count2;
     });
-    
 }
 
 function itemChange(element){
