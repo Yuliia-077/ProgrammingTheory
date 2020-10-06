@@ -48,10 +48,10 @@ function listenDeleteTodo(element, inp) {
         if(!inp.checked)
             {
                count2 -=1; 
+               uncheckedCountSpan.innerText = uncheckedCountSpan.textContent = count2;
             }
         count -= 1;
         itemCountSpan.innerText = itemCountSpan.textContent = count;
-        uncheckedCountSpan.innerText = uncheckedCountSpan.textContent = count2;
     });
 }
 
