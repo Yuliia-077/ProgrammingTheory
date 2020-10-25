@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html{
+  background-color: #292929;
+}
+
+.App{
+    background-color: #292929;
+    width: 100%;
+    height: 100%;
+}
+
+.brand{
+  color:white;
+}
+
+.headLink{
+  color: white;
+  margin: 0.5em;
+}
+
+.headLink:hover{
+  color: lightgrey;
+}
+
+.home{
+  background-color: white;
+  border: black dashed 1px;
+  border-radius: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+}
+
+.autor{
+  text-align: end;
+}
+
+.login{
+  background-color: white;
+  border: black dashed 1px;
+  border-radius: 1em;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.btn{
+  margin-top: 1em;
+}
+
+.heading{
+  text-align: center;
+}
